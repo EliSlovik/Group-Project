@@ -2,7 +2,7 @@
 
 ## Members
 #### Eli Slovik: Programmer
-#### Aidan Slovik: Programmer
+#### Aidan Slovik: #1 Programmer
 #### Jialai Ying: Programmer
 #### Cormac Stone: Programmer
 #### Owen Madsen: Programmer
