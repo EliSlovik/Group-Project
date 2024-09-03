@@ -1,4 +1,4 @@
-public class mutiplication {
+public class multiplication {
     public int  options[] = new int[4];
     public int correctoption;
     public String text;
