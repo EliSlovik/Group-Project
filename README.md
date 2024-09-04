@@ -1,8 +1,8 @@
 # Group-Project
 
 ## Members
-#### Eli Slovik: Programmer
-#### Aidan Slovik: #1 Programmer
+#### Eli Slovik: Main Programmer & Group Leader
+#### Aidan Slovik:  Programmer
 #### Jialai Ying: Programmer
 #### Cormac Stone: Programmer
 #### Owen Madsen: Programmer
