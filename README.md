@@ -12,3 +12,6 @@ This project is built to allow users to take a simple math quiz which displays 4
 
 link of current project:
 [https://codehs.com/sandbox/id/java-main-Ao90JB?collaborate=-O5KPk01ns4nLhpnVfY-]
+
+Class Diagram
+![image](https://github.com/user-attachments/assets/42d016b5-a1da-4a9b-926c-2adada20b4b6)
