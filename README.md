@@ -15,3 +15,6 @@ link of current project:
 
 ## Class Diagram
 ![image](https://github.com/user-attachments/assets/42d016b5-a1da-4a9b-926c-2adada20b4b6)
+
+## Demo Screenshot
+![image](https://github.com/EliSlovik/Group-Project/blob/main/images%20&%20screenshots/quiz%20demonstration.png?raw=true)
