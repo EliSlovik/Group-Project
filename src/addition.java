@@ -1,4 +1,4 @@
-## All Eli Slovik
+//All Eli Slovik
 public class addition {
     public int  options[] = new int[4];
     public int correctoption;
@@ -26,7 +26,7 @@ public class addition {
              }
              
         }
-        text = "what is " + numb1 + " + " + numb2 + "?";
+        text = "What is " + numb1 + " + " + numb2 + "?";
     }
     
     public void printoptions(){
