@@ -7,6 +7,9 @@
 #### Cormac Stone: Programmer
 #### Owen Madsen: Programmer
 
+
+A gameified AP Study Guide with practice tests, flashcards, notes, background music, with game elements.
+
 ## Description
 This project is built to allow users to take a simple math quiz which displays 4 multiple questions. Upon answering all of the them, our code takes the input and produces the amount and percentage of correct given answers.
 
