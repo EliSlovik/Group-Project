@@ -6,7 +6,7 @@
 #### Jialai Ying: Programmer
 #### Cormac Stone: Programmer
 #### Owen Madsen: Programmer
-
+#### Peter Klehr: Programmer
 
 A gameified AP Study Guide with practice tests, flashcards, notes, background music, with game elements.
 
