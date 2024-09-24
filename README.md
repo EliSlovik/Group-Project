@@ -13,11 +13,8 @@
 #### Peter Klehr: Programmer
 
 
-Gambling game that will teach the user about stats
 
-Stock thing 
-
-Trend game you create a trend and "upgrade" it to make it do better, this will help teach about how advertisements, social interactions, social media, demographics.
+Trend game you create a trend and "upgrade" it to make it do better, this will help teach about how advertisements, social interactions, social media, demographics. 
 
 
 ## Quiz Program
