@@ -12,7 +12,15 @@
 #### Owen Madsen: Programmer
 #### Peter Klehr: Programmer
 
-A gameified AP Study Guide with practice tests, flashcards, notes, background music, with game elements.
+
+Gambling game that will teach the user about stats
+
+Advertisement predicter that will predict how your advertisement will do
+
+Stock thing 
+
+Trend game you create a trend and "upgrade" it to make it do better, this will help teach about how advertisements, social interactions, social media, demographics.
+
 
 ## Quiz Program
 ### Description
