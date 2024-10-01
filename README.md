@@ -12,11 +12,7 @@
 #### Owen Madsen: Programmer
 #### Peter Klehr: Programmer
 
-Gambling Game
-- Would use statistics to calculate expected value and chances of winning
-- Several games, including roulette, blackjack, and baccarat
-- Useful to teach users of probablility
-- can run simulations with fake money
+Fire Simulation Game
 
 Trend game 
 * you create a trend and "upgrade" it to make it do better.
