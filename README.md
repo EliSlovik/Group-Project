@@ -1,12 +1,12 @@
 
 
 ## Members
-#### Eli Slovik: 
-#### Aidan Slovik: 
-#### Jialai Ying: 
-#### Cormac Stone: 
-#### Owen Madsen: 
-#### Peter Klehr: 
+#### Eli Slovik: Upgrades
+#### Aidan Slovik: Making Map and intergrating it 
+#### Jialai Ying: GUI 
+#### Cormac Stone: Trends
+#### Owen Madsen: Upgrades
+#### Peter Klehr: Data and applying to Map
 
 # Current Projects
 Fire Simulation Game
