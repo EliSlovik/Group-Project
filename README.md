@@ -1,4 +1,4 @@
-# HypeSphere: Where Trends Emerge.
+# Viral-Wave: Where Trends Emerge.
 
 ## Members
 #### Eli Slovik: Upgrades
