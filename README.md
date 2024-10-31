@@ -31,5 +31,5 @@ Trend game
 * Trend Game's goal is to provide a fun experience for the user, while also teaching them about the spread of trends/things, and how demographics, social media and society in general, affects this.
 
 ### Class Diagram, GUI MockUp, Demos, and more
-
-![Class Diagram](images & screenshots\trendGameClassDiagram.png)
+Class Diagram (Work in Progress)
+![ClassDiagram](images\trendGameClassDiagram.png)
