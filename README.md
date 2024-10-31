@@ -32,4 +32,4 @@ Trend game
 
 ### Class Diagram, GUI MockUp, Demos, and more
 Class Diagram (Work in Progress)
-![ClassDiagram](images\trendGameClassDiagram.png)
+![ClassDiagram](images/trendGameClassDiagram.png)
