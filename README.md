@@ -1,4 +1,4 @@
-
+# HypeSphere: Where Trends Emerge.
 
 ## Members
 #### Eli Slovik: Upgrades
