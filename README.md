@@ -1,17 +1,17 @@
 
 # Members
 
-### Eli Slovik (Main Programmer): Works on the 2 main classes;Upgrades and Trends, but will mainly work on the Upgrades class and its subclass Enhancers
+#### Eli Slovik (Main Programmer): Works on the 2 main classes;Upgrades and Trends, but will mainly work on the Upgrades class and its subclass Enhancers
 
-### Aidan Slovik (Graphics Programmer, and Designer): Will design our hard coded map of SLC, and will help Peter with making randomly generated maps
+#### Aidan Slovik (Graphics Programmer, and Designer): Will design our hard coded map of SLC, and will help Peter with making randomly generated maps
 
-### Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI
+#### Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI
 
-### Cormac Stone (Inheritance Programmer): Will be the main programmer for setting up Inheritance and will focuse on the Trends Class
+#### Cormac Stone (Inheritance Programmer): Will be the main programmer for setting up Inheritance and will focuse on the Trends Class
 
-### Owen Madsen (Project Manager, Programmer, and Team Support): Will work on the Spreader subclass of the Upgrades Class, while also helping with GUI and Trends
+#### Owen Madsen (Project Manager, Programmer, and Team Support): Will work on the Spreader subclass of the Upgrades Class, while also helping with GUI and Trends
 
-### Peter Klehr (Data, and Map Programmer): Will Reseach data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
+#### Peter Klehr (Data, and Map Programmer): Will Reseach data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
 
 ## Current Projects
 Trend game
