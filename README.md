@@ -1,4 +1,4 @@
-# Viral-Wave: Where Trends Emerge.
+# Volks-Wagen: Where Trends Emerge.
 
 ## Members
 #### Eli Slovik: Upgrades
