@@ -29,3 +29,7 @@ Trend game
 * Trend Game will be a Real-time Strategy game, The usual time to beat a map will be around 8-15 minutes depending on the users strategy.
 * The goal of the user is to find the optimal Strategy for each trend, and map.
 * Trend Game's goal is to provide a fun experience for the user, while also teaching them about the spread of trends/things, and how demographics, social media and society in general, affects this.
+
+### Class Diagram, GUI MockUp, Demos, and more
+
+![Class Diagram](images & screenshots\trendGameClassDiagram.png)
