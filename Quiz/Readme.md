@@ -1,4 +1,4 @@
-# Group-Project
+# Quiz
 
 ## Members
 #### Eli Slovik: Main Programmer & Group Leader
