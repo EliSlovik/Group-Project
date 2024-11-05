@@ -2,7 +2,6 @@
 # Members
 
 ####
-#I Am On Strike!!!
 * Eli Slovik (Main Programmer): Will mainly work on the Upgrade class and its subclass Enhancers
 
 * Aidan Slovik (Graphics Programmer, and Designer): Will design our hard coded map of SLC, and will help Peter with making randomly generated maps
