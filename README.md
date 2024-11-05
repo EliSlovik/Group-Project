@@ -6,7 +6,7 @@
 
 * Aidan Slovik (Graphics Programmer, and Designer): Will design our hard coded map of SLC, and will help Peter with making randomly generated maps
 
-* Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI
+* Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI  
 
 * Cormac Stone (Inheritance Programmer): Will be the main programmer for setting up Inheritance and will focuse on the Trends Class
 
