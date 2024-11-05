@@ -1,6 +1,5 @@
 
 # Members
-# I am on strike
 ####
 * Eli Slovik (Main Programmer): Will mainly work on the Upgrade class and its subclass Enhancers
 
