@@ -21,6 +21,7 @@ public class Main {
         Screen.add(startScreen);
         // making window visible;
         Screen.setVisible(true);
+        
 
     }
 

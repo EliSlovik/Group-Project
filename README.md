@@ -31,5 +31,9 @@ Trend game
 * Trend Game's goal is to provide a fun experience for the user, while also teaching them about the spread of trends/things, and how demographics, social media and society in general, affects this.
 
 ### Class Diagram, GUI MockUp, Demos, and more
+
 Class Diagram (Work in Progress)
 ![ClassDiagram](images/trendGameClassDiagram.png)
+
+Link to Swing Documentation
+<https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html>
