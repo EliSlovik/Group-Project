@@ -36,7 +36,7 @@ Trend game
 ### Class Diagram, GUI MockUp, Demos, and more
 
 Class Diagram (Work in Progress)
-![ClassDiagram](images/trendGameClassDiagram.png)
+![ClassDiagram](images/trendGameClassDiagram-5.png)
 
 Link to Swing Documentation
 <https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html>
