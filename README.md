@@ -12,7 +12,7 @@
 
 * Owen Madsen (Project Manager, Programmer, and Team Support): Will work on the Spreader subclass of the Upgrade Class, while also helping with GUI and Trends
 
-* Peter Klehr (Data, and Map Programmer): Will Reseach data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
+* Peter Klehr (Data, Graphic Designer, and Map Programmer): Will research data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
 
 ## Current Projects
 
