@@ -16,6 +16,8 @@
 
 ## Current Projects
 
+![ClassDiagram](images/Asset 1.jpg)
+
 Trend game
 
 * Trend Game is simulation like game that will give the user the choice of five different trends, and their goal will be to try and spread it over the entire map.
