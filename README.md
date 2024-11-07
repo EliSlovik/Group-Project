@@ -42,7 +42,7 @@ Map Class Diagram
 ![MAP](images/Map.drawio.png)
 
 Class Diagram File
-![ClassDiagram](
+![ClassDiagram](files/trendGameClassDiagram-5-4.drawio)
 
 Link to Swing Documentation
 <https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html>
