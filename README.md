@@ -16,7 +16,7 @@
 
 ## Current Projects
 
-![ClassDiagram](images/Asset 1.jpg)
+![Logo](images/Asset1.jpg)
 
 Trend game
 
