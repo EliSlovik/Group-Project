@@ -17,6 +17,7 @@
 ## Current Projects
 
 ![Logo](images/Asset1.jpg)
+Peter Klehr
 
 Trend game
 
