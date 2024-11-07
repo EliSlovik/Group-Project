@@ -37,12 +37,15 @@ Trend game
 
 Class Diagram (Work in Progress)
 ![ClassDiagram](images/trendGameClassDiagram-5.png)
+Class Diagram File
+![ClassDiagram](files/trendGameClassDiagram-5-4.drawio)
+
+
 Map Class Diagram
 
 ![MAP](images/Map.drawio.png)
 
-Class Diagram File
-![ClassDiagram](files/trendGameClassDiagram-5-4.drawio)
+
 
 Link to Swing Documentation
 <https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html>
