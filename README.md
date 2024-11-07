@@ -18,7 +18,7 @@
 
 ![Logo](images/Asset1.jpg)
 
-Peter Klehr
+-Peter Klehr
 
 Trend game
 
