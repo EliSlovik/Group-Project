@@ -1,3 +1,3 @@
-public class magazine extends realLife{
+public class Magazine extends realLife{
     private int pages;
 }
