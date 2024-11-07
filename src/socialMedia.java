@@ -1,3 +1,3 @@
-abstract class SocialMedia extends Spread{
+abstract class SocialMedia extends spread{
     
 }
