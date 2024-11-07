@@ -1,3 +1,3 @@
-public class realLife extends spread{
+Abstract class realLife extends spread{
     
 }
