@@ -5,4 +5,18 @@ public class Music extends Trends{
         Country,
         Jazz,
     }
+    enum wayOfPlaying {
+        concert,
+        Spotify,
+        radio,
+        publicSpeakers
 }
+    void Remix() {
+        
+    }
+    void addConcert() {
+
+    }
+    void putOnRadio() {
+
+    }
