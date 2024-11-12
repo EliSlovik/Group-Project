@@ -38,7 +38,7 @@ Trend game
 Class Diagram (Work in Progress)
 ![ClassDiagram](images/trendGameClassDiagram-5.png)
 Class Diagram File
-![ClassDiagram](files/trendGameClassDiagram-5-4.drawio)
+![ClassDiagram](files/Untitleddocument.pdf)
 
 
 Map Class Diagram
