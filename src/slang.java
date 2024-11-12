@@ -3,4 +3,7 @@ public class Slang extends Trends{
       genZ,
       genA,
    }
+   void adapt (){
+      
+   }
 }
