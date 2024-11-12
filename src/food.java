@@ -8,4 +8,7 @@ public class Food extends Trends{
         European,
         African,
     }
+    void makeLimitedEdition(){
+        
+    }
 }
