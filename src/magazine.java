@@ -4,6 +4,6 @@ public class Magazine extends realLife{
     private boolean isFrontPage;
     enum location {
         bookStore, 
-        gasStation
+        gasStation,
     }
 }
