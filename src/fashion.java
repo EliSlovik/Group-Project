@@ -4,4 +4,18 @@ public class Fashion extends Trends{
         athletic,
         western,
         old
+
+    }
+    enum gender{
+
+        male, 
+        female
+        
+    }
+    enum material{
+        silk,
+        cotton,
+        polyester,
+        
+    }
 }
