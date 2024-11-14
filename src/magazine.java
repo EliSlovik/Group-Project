@@ -7,6 +7,6 @@ public class Magazine extends realLife{
         gasStation,
     }
 
-    public void printMagazines {
+    public void printMagazines() {
     }
 }

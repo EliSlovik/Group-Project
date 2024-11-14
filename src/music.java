@@ -14,3 +14,4 @@ public class Music extends Trends{
     void addConcert() {
 
     }
+}
