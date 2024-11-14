@@ -1,6 +1,23 @@
 public class upgrade{
-  int age; 
-  enum [man,woman,];
-  enum [caucasian, black, latino, asian];
-  int averageSalary;
+  int targetAge; 
+  int cost;
+  enum targetGender {
+    man,
+    woman
+  }
+  enum {
+    caucasian, 
+    black, latino
+    , asian
+  }
+  int targetSalaryRange;
+  int spreadRate;
+  public int getCost(){
+    return cost;
+  }
+  public int getTargetAge(){
+    return targetAge;
+  }
+  public int getTargetSalaryRange(){
+    return targetSalaryRange;
 }
