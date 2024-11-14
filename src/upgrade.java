@@ -1,4 +1,4 @@
-public class upgrade{
+public abstract class upgrade{
   int targetAge; 
   int cost;
   enum targetGender {
