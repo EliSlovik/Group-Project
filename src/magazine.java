@@ -6,4 +6,7 @@ public class Magazine extends realLife{
         bookStore, 
         gasStation,
     }
+
+    public void printMagazines {
+    }
 }
