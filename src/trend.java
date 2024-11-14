@@ -3,5 +3,7 @@ public class trend {
   int numUpgrades;
   int peopleSeen;
   int numUpgrades;
-  
+  private void modify(){
+    
+  }
 }
