@@ -6,4 +6,13 @@ abstract class SocialMedia extends spread{
         TikTok, 
         Instagram, 
     }
-}
+
+    public void makePost(
+    }
+
+    public void makeAd() {
+    }
+
+    public void collab() {
+    }
+)
