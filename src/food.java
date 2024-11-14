@@ -9,7 +9,7 @@ public class Food extends Trends{
         African,
     }
      public void trendSound() {
-    // The body of animalSound() is provided here
+    // The body of trendSound() is provided here
     System.out.println("The pig says: wee wee");
   }
     
