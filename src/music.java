@@ -11,9 +11,6 @@ public class Music extends Trends{
         radio,
         publicSpeakers
 }
-    void Remix() {
-        
-    }
     void addConcert() {
 
     }
