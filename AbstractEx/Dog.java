@@ -8,12 +8,12 @@ public class Dog extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(getName() + " the " + breed + " barks!");
+        System.out.println(getName() + " the " + breed + " barks");
     }
 
     @Override
     public void move() {
-        System.out.println(getName() + " the " + breed + " runs on four legs.");
+        System.out.println(getName() + " the " + breed + " runs...");
     }
 
     public String getBreed() {
