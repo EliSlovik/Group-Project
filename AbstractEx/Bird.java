@@ -15,7 +15,10 @@ public class Bird extends Animal {
     public void move() {
         System.out.println(getName() + " has a wingspan of " + wingspan + " inches");
     }
-
+    @Override
+    public void calcCalories() {
+         System.out.println(getWeight * 30);   
+    }
     public int getWingspan() {
         return wingspan;
     }
