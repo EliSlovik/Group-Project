@@ -17,7 +17,7 @@ public class Bird extends Animal {
     }
     @Override
     public void calcCalories() {
-         System.out.println("they eat" + getWeight * 30 + "calories per day");   
+         System.out.println("they eat" + getWeight() * 30 + "calories per day");   
     }
     public int getWingspan() {
         return wingspan;
