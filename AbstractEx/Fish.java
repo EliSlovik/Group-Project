@@ -1,8 +1,8 @@
 public class Fish extends Animal {
     private boolean isFreshwater;
 
-    public Fish(String name, boolean isFreshwater) {
-        super(name);
+    public Fish(String name, int weight, boolean isFreshwater) {
+        super(name, weight);
         this.isFreshwater = isFreshwater;
     }
 
