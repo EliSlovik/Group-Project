@@ -13,7 +13,7 @@ public class Fish extends Animal {
 
     @Override
     public void move() {
-        String waterType = isFreshwater ? "freshwater" : "saltwater";
+        String waterType = isFreshwater;
         System.out.println(getName() + " swims in " + waterType + ".");
     }
 
