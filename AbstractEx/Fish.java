@@ -23,7 +23,7 @@ public class Fish extends Animal {
 }
     @Override
     public void calcCalories() {
-         System.out.println("they eat" + getWeight() * 10 + "calories per day");   
+         System.out.println(getName() + " eats " + getWeight() * 10 + " calories per day");   
     }
 
     public boolean isFreshwater() {
