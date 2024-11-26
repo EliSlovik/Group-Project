@@ -21,6 +21,10 @@ public class Fish extends Animal {
     }
     System.out.println(getName() + " swims in " + waterType);
 }
+    @Override
+    public void calcCalories() {
+         System.out.println("they eat" + getWeight * 10);   
+    }
 
     public boolean isFreshwater() {
         return isFreshwater;
