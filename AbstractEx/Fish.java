@@ -12,10 +12,15 @@ public class Fish extends Animal {
     }
 
     @Override
-    public void move() {
-        String waterType = isFreshwater ? "freshwater" : "saltwater";
-        System.out.println(getName() + " swims in " + waterType + ".");
+  public void move() {
+    String waterType;
+    if (isFreshwater) {
+        waterType = "freshwater";
+    } else {
+        waterType = "saltwater";
     }
+    System.out.println(getName() + " swims in " + waterType + ".");
+}
 
     public boolean isFreshwater() {
         return isFreshwater;
