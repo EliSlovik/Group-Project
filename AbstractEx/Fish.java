@@ -8,7 +8,7 @@ public class Fish extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(getName() + " the fish burps!");
+        System.out.println(getName() + " the fish burps");
     }
 
     @Override
@@ -19,7 +19,7 @@ public class Fish extends Animal {
     } else {
         waterType = "saltwater";
     }
-    System.out.println(getName() + " swims in " + waterType + ".");
+    System.out.println(getName() + " swims in " + waterType);
 }
 
     public boolean isFreshwater() {
