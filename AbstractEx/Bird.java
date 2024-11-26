@@ -8,12 +8,12 @@ public class Bird extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(getName() + " the bird chirps!");
+        System.out.println(getName() + " the bird chirps");
     }
 
     @Override
     public void move() {
-        System.out.println(getName() + " flies with a wingspan of " + wingspan + " inches.");
+        System.out.println(getName() + " has a wingspan of " + wingspan + " inches");
     }
 
     public int getWingspan() {
