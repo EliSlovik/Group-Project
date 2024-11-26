@@ -1,8 +1,8 @@
 public class AnimalTester {
     public static void main(String[] args) {
-        Animal dog = new Dog("Buddy", "Golden Retriever");
+        Animal dog = new Dog("Buster", "Golden Retriever");
         Animal fish = new Fish("Nemo", true);
-        Animal bird = new Bird("Sky", 24);
+        Animal bird = new Bird("Blu", 24);
 
         System.out.println("Dog:");
         dog.makeSound();
