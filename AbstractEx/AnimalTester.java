@@ -7,13 +7,16 @@ public class AnimalTester {
         System.out.println("Dog:");
         dog.makeSound();
         dog.move();
-
+        dog.calcCalories();
+        
         System.out.println("\nFish:");
         fish.makeSound();
         fish.move();
+        fish.calcCalories();
 
         System.out.println("\nBird:");
         bird.makeSound();
         bird.move();
+        bird.calcCalories();
     }
 }
