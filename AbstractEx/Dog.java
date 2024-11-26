@@ -17,7 +17,7 @@ public class Dog extends Animal {
     }
     @Override
     public void calcCalories() {
-         System.out.println("they eat" + getWeight * 20);   
+         System.out.println("they eat" + getWeight * 20 + "calories per day");   
     }
 
     public String getBreed() {
