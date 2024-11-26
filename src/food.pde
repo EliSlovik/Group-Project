@@ -1,19 +1,15 @@
-public class Food extends Trends{
-    private boolean isHealthy;
-    private boolean isVegan;
-    private boolean hasProtein;
-    enum cuisine {
-        Mexican,
-        Asian,
-        European,
-        African,
-    }
-     public void trendSound() {
-    // The body of trendSound() is provided here
-    System.out.println("The pig says: wee wee");
+public class Food extends Trends {
+  private boolean isHealthy;
+  private boolean isVegan;
+  private boolean hasProtein;
+  
+  enum Cuisine {
+    Mexican,
+    Asian,
+    European,
+    African
   }
-    
-    void makeLimitedEdition(){
-        
-    }
+
+  void makeLimitedEdition() {
+  }
 }
