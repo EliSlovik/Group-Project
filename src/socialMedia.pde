@@ -1,18 +1,20 @@
-abstract class SocialMedia extends spread{
-    private int likeToDislikeRation;
-    private int shareRatio;
-    private enum platform {
-        Tacebook, 
-        TikTok, 
-        Instagram, 
-    }
+abstract class SocialMedia extends Spread {
+  private int likeToDislikeRatio;
+  private int shareRatio;
 
-    public void makePost(
-    }
+  private enum Platform {
+    Facebook,
+    TikTok,
+    Instagram
+  }
 
-    public void makeAd() {
-    }
+  public void makePost() {
+  }
 
-    public void collab() {
-    }
-)
+  public void makeAd() {
+  }
+
+  public void collab() {
+  }
+}
+
