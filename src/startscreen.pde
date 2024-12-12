@@ -15,10 +15,9 @@ void setup() {
 
 void draw() {
   if (gameStarted) {
-    background(0); // Black screen when game starts
+    background(0);
   } else {
-    background(300); // Dark blue screen
-    fill(255);
+    background(300); 
     rect(buttonX, buttonY1, buttonWidth, buttonHeight);
     rect(buttonX, buttonY2, buttonWidth, buttonHeight);
 
@@ -31,7 +30,6 @@ void draw() {
 }
 
 void mousePressed() {
-  // Check if the mouse is within the "Click to Start!" button
   if (!gameStarted && 
       mouseX >= buttonX && mouseX <= buttonX + buttonWidth && 
       mouseY >= buttonY2 && mouseY <= buttonY2 + buttonHeight) {
@@ -39,4 +37,3 @@ void mousePressed() {
     redraw();
   }
 }
-
