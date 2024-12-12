@@ -1,28 +1,39 @@
-// import javax.swing.*;
+int buttonWidth = 300;
+int buttonHeight = 50;
+int buttonX;
+int buttonY1;
+int buttonY2;
+boolean gameStarted = false;
 
-// public class Main {
-//     public static void main(String[] args) {
-//         // using swing JFRAME to set up the Window, Jframe is the whole window;
-//         JFrame Screen = new JFrame("start screen");
-//         Screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//         Screen.setSize(1920, 1080);
-//         // JPANEL, Panel is sort of like a slideshow slide, set the layout to null to be able to set the position of buttons and suck by x and y coords;
-//         JPanel startScreen = new JPanel();
-//         startScreen.setLayout(null);
-//         // JButton
-//         JButton play = new JButton("Play!");
-//         // setting where the button will be, it goes x, y, width, height. make sure to adjust the positoning of the button based on its size;
-//         play.setBounds(1920/2 - 50, 1080/2 - 50, 100, 100);
-//         // ActionListeners this basically just shows when the buttons is pressed, a window saying it was, have no clue what it really is for
-//         play.addActionListener(e -> JOptionPane.showMessageDialog(Screen, "Play Clicked"));
-//         // adding the button panel.add(button);
-//         startScreen.add(play);
-//         // adding the startScreen "slide" or panel to the window;
-//         Screen.add(startScreen);
-//         // making window visible;
-//         Screen.setVisible(true);
-        
+void setup() {
+  size(500, 500);
+  buttonX = (width - buttonWidth) / 2;
+  buttonY1 = height / 2 - 30;
+  buttonY2 = height / 2 + 30;
+  noLoop();
+}
 
-//     }
+void draw() {
+  if (gameStarted) {
+    background(0);
+  } else {
+    background(300); 
+    rect(buttonX, buttonY1, buttonWidth, buttonHeight);
+    rect(buttonX, buttonY2, buttonWidth, buttonHeight);
 
-// }
+    fill(0);
+    textAlign(CENTER, CENTER);
+    textSize(16);
+    text("Welcome to the ViralWave Game!", buttonX + buttonWidth / 2, buttonY1 + buttonHeight / 2);
+    text("Click to Start!", buttonX + buttonWidth / 2, buttonY2 + buttonHeight / 2);
+  }
+}
+
+void mousePressed() {
+  if (!gameStarted && 
+      mouseX >= buttonX && mouseX <= buttonX + buttonWidth && 
+      mouseY >= buttonY2 && mouseY <= buttonY2 + buttonHeight) {
+    gameStarted = true;
+    redraw();
+  }
+}
