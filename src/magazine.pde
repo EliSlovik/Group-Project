@@ -1,4 +1,4 @@
-public class Magazine extends Trend {
+public class Magazine extends Upgrade {
   private int pages;
   private int numberOfCopes;
   private boolean isFrontPage;
