@@ -1,4 +1,4 @@
-abstract class SocialMedia extends Spread {
+abstract class socialMedia extends Spread {
   private int likeToDislikeRatio;
   private int shareRatio;
 
