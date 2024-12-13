@@ -1,3 +1,4 @@
+//Aidan Slovik, Cormac Stone
 boolean on,opaq;
 int co,opval;
 
