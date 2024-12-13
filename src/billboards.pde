@@ -1,4 +1,4 @@
-public class BillBoard extends RealLife {
+public class BillBoard extends trend {
     private int location;
     private int amountOfTraffic;
     private boolean isScreen;
