@@ -1,4 +1,4 @@
-public class Magazine extends RealLife {
+public class Magazine extends Trend {
   private int pages;
   private int numberOfCopes;
   private boolean isFrontPage;
