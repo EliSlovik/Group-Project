@@ -1,4 +1,4 @@
-public class billBoard extends RealLife{
+public class BillBoard extends RealLife {
     private int location;
     private int amountOfTraffic;
     private boolean isScreen;
@@ -11,7 +11,7 @@ public class billBoard extends RealLife{
     public void buy() {
     }
 
-    public int getNumberOfViewers {
+    public int getNumberOfViewers() {
         return amountOfTraffic;
     }
 }
