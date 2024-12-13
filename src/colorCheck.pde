@@ -32,7 +32,7 @@ void draw() {
   //}
 
   if (!on) {
-    co = 255;
+    co = 200;
   } else {
     co = 100;
   }
