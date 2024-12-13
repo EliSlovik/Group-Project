@@ -1,4 +1,4 @@
-public class BillBoard extends Trend {
+public class BillBoard extends Upgrade {
     private int location;
     private int amountOfTraffic;
     private boolean isScreen;
