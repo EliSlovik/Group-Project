@@ -1,4 +1,4 @@
-public class Food extends Trends {
+public class Food extends Trend {
   private boolean isHealthy;
   private boolean isVegan;
   private boolean hasProtein;
