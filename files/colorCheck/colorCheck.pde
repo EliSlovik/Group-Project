@@ -1,9 +1,10 @@
-boolean on,opaq;
-int co,opval;
+//Aidan Slovik, Cormac Stone
+boolean on, opaq;
+int co, opval;
 
 void setup() {
   size(400, 400);
-  background(123, 10,1);
+  background(0, 10,255 );
   colorMode(RGB, 255);
 }
 
@@ -32,24 +33,35 @@ void draw() {
   //}
 
   if (!on) {
-    co = 200;
+    co = 255;
   } else {
     co = 100;
   }
-  
-  if (!opaq) {
-    opval = 0;
-  } else {
-    opval = 123;
-  }
 
-  fill(co, 0, 0);
-  beginShape();
-  vertex(120, 80);
-  vertex(180, 60);
-  vertex(260, 100);
-  vertex(340, 190);
-  vertex(340, 300);
-  vertex(120, 300);
-  endShape(CLOSE);
+  if (!opaq) {
+    opval = 255;
+  } else {
+    opval = 10;
+  }
+  if (opval == 10) {
+    fill(co, 0, 0, opval);
+    beginShape();
+    vertex(120, 80);
+    vertex(180, 60);
+    vertex(260, 100);
+    vertex(340, 190);
+    vertex(340, 300);
+    vertex(120, 300);
+    endShape(CLOSE);
+  } else {
+    fill(co, 0, 0);
+    beginShape();
+    vertex(120, 80);
+    vertex(180, 60);
+    vertex(260, 100);
+    vertex(340, 190);
+    vertex(340, 300);
+    vertex(120, 300);
+    endShape(CLOSE);
+  }
 }
