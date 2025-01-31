@@ -1,25 +1,23 @@
 //Jialai Ying, Cormac Stone, Eli Slovik
-boolean play = false;
-boolean play2 = false;
-PImage img;
+boolean play, play2, play3 = false;
+PImage ut,ny;
 void setup() {
   size(1000, 1000);
 }
 void draw() {
   if (!play) {
     startscreen();
-  }
-  else if (play && !play2) {
+  } else if (play && !play2) {
     trendscreen();
   }
   //Cormac Stone
   else if  (play2) {
-    img = loadImage("UP.png");
+    ut = loadImage("UP.png");
     imageMode(CENTER);
-    img.resize(900,900);
-    image(img,700, 650);
-    fill(green(get(mouseX,mouseY)));
-  println(green(get(mouseX,mouseY))/10);
+    ut.resize(900, 900);
+    image(ut, 700, 650);
+    fill(green(get(mouseX, mouseY)));
+    println(green(get(mouseX, mouseY))/10);
   }
   //Cormac Stone
   else if (play3) {
@@ -111,12 +109,10 @@ void mousePressed() {
   if (play && !play2) {
     if (mouseX >= buttonXTrend && mouseX <= buttonXTrend + buttonWidthTrend && mouseY >= buttonY1Trend && mouseY <= buttonY1Trend + buttonHeightTrend) {
       println("Food Trends Selected");
-      play2 = true;
+      play3 = true;
     } else if (mouseX >= buttonXTrend && mouseX <= buttonXTrend + buttonWidthTrend && mouseY >= buttonY2Trend && mouseY <= buttonY2Trend + buttonHeightTrend) {
       println("Music Trends Selected");
       play2 = true;
     }
   }
-  
-  
 }
