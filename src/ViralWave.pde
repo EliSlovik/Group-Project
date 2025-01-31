@@ -1,7 +1,9 @@
+//Jialai Ying, Cormac Stone, Eli Slovik
 boolean play = false;
 boolean play2 = false;
+PImage img;
 void setup() {
-  size(500, 500);
+  size(1000, 1000);
 }
 void draw() {
   if (!play) {
@@ -9,6 +11,15 @@ void draw() {
   }
   else if (play && !play2) {
     trendscreen();
+  }
+  //Cormac Stone
+  else if  (play2) {
+    img = loadImage("UP.png");
+    imageMode(CENTER);
+    img.resize(900,900);
+    image(img,700, 650);
+    fill(green(get(mouseX,mouseY)));
+  println(green(get(mouseX,mouseY))/10);
   }
 }
 void startscreen() {
@@ -98,4 +109,6 @@ void mousePressed() {
       play2 = true;
     }
   }
+  
+  
 }
