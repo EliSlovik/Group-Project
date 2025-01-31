@@ -21,6 +21,14 @@ void draw() {
     fill(green(get(mouseX,mouseY)));
   println(green(get(mouseX,mouseY))/10);
   }
+  //Cormac Stone
+  else if (play3) {
+    ny = loadImage("NY.png");
+    imageMode(CENTER);
+    ny.resize(900,900);
+    fill(blue(get(mouseX,mouseY)));
+    println(blue(get(mouseX,mouseY))/10);
+  }
 }
 void startscreen() {
   int buttonWidth = 300;
