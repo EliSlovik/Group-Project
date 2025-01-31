@@ -28,6 +28,31 @@ void draw() {
     println(blue(get(mouseX,mouseY))/10);
   }
 }
+//Jialai Ying nopt really needed but okay
+void drawBackgroundImage() {
+  imageMode(CORNER); // Draw from top-left
+
+  // Calculate the scaling factor to cover the entire screen
+  float imgAspect = (float) ny.width / ny.height;
+  float screenAspect = (float) width / height;
+
+  float newWidth, newHeight;
+
+  if (imgAspect > screenAspect) {
+    // Image is wider than screen: scale by height
+    newHeight = height;
+    newWidth = ny.width * (height / (float) ny.height);
+  } else {
+    // Image is taller than screen: scale by width
+    newWidth = width;
+    newHeight = ny.height * (width / (float) ny.width);
+  }
+
+  float xOffset = (width - newWidth) / 2;
+  float yOffset = (height - newHeight) / 2;
+
+  image(ny, xOffset, yOffset, newWidth, newHeight);
+}
 void startscreen() {
   int buttonWidth = 300;
   int buttonHeight = 50;
