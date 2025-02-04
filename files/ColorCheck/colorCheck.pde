@@ -13,4 +13,8 @@ void setup() {
 void draw() {
   fill(green(get(mouseX,mouseY)));
   println(green(get(mouseX,mouseY))/10);
+  fill(red(get(mouseX,mouseY)));
+  println(red(get(mouseX,mouseY))/10);
+  fill(blue(get(mouseX,mouseY)));
+  println(blue(get(mouseX,mouseY))/10);
 }
