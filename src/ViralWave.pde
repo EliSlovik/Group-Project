@@ -23,7 +23,8 @@ void draw() {
   else if (play3) {
     ny = loadImage("NY.png");
     imageMode(CENTER);
-    ny.resize(900,900);
+    ny.resize(900, 900);
+    image(ny, 700, 650);
     fill(blue(get(mouseX,mouseY)));
     println(blue(get(mouseX,mouseY))/10);
   }
