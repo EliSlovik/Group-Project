@@ -7,11 +7,11 @@ void setup() {
 void draw() {
   if (!play) {
     startscreen();
-  } else if (play && !play2) {
+  } else if (play && !play2 && !play3) {
     trendscreen();
   }
   //Cormac Stone
-  else if  (play2) {
+  else if  (play3) {
     ut = loadImage("UP.png");
     imageMode(CENTER);
     ut.resize(900, 900);
@@ -20,11 +20,11 @@ void draw() {
     println(green(get(mouseX, mouseY))/10);
   }
   //Cormac Stone
-  else if (play3) {
+  else if (play2) {
     ny = loadImage("NY.png");
     imageMode(CENTER);
-    ny.resize(900, 900);
-    image(ny, 700, 650);
+    ny.resize(900, 700);
+    image(ny, 550, 540);
     fill(blue(get(mouseX,mouseY)));
     println(blue(get(mouseX,mouseY))/10);
   }
@@ -132,7 +132,7 @@ void mousePressed() {
   int buttonY1Trend = height / 2 - 30;
   int buttonY2Trend = height / 2 + 30;
 
-  if (play && !play2) {
+  if (play && !play2 && !play3) {
     if (mouseX >= buttonXTrend && mouseX <= buttonXTrend + buttonWidthTrend && mouseY >= buttonY1Trend && mouseY <= buttonY1Trend + buttonHeightTrend) {
       println("Food Trends Selected");
       play3 = true;
@@ -140,5 +140,5 @@ void mousePressed() {
       println("Music Trends Selected");
       play2 = true;
     }
-  }
+  } 
 }
