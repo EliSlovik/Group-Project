@@ -4,7 +4,7 @@
 
 * Eli Slovik (Main Programmer): Will mainly work on the Upgrade class and its subclass Enhancers, as well as helping with map logic and demographics
 
-* Aidan Slovik (Graphics Programmer, and Designer): Will design our hard coded map of SLC, and will help Peter with making randomly generated maps
+* Aidan Slovik (Graphics Programmer, and Data Collector): Will design our hard coded maps, and will help Peter with making randomly generated maps
 
 * Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI  
 
