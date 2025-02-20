@@ -24,6 +24,7 @@ void draw() {
     fill(255);
     String hi = str(green(get(mouseX, mouseY))/10);
     text(hi, 950, 50);
+    text("poverty % \nin utah", 950,80);
   }
   //Cormac Stone
   else if (play2) {
@@ -33,10 +34,11 @@ void draw() {
     image(ny, 550, 540);
     fill(blue(get(mouseX, mouseY)));
     fill(0, 0, 0);
-    square(900, 0, 110);
+    square(900, 0, 100);
     fill(255);
     String hi = str(blue(get(mouseX, mouseY))/10);
     text(hi, 950, 50);
+    text("senior citizen % \nin new york", 950, 80);
   }
   if (play) {
     delay += 6;
