@@ -2,6 +2,7 @@
 boolean play, play2, play3 = false;
 PImage ut, ny;
 int delay = 0;
+int money;
 void setup() {
   size(1000, 1000);
 }
