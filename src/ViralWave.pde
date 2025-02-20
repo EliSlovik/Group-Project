@@ -31,7 +31,7 @@ void draw() {
     println(blue(get(mouseX,mouseY))/10);
   }
   if(play){
-    delay++; 
+    delay += 6; 
   }
 }
 //Jialai Ying nopt really needed but okay
