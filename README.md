@@ -19,7 +19,7 @@
 ![Logo](images/Asset1.jpg)
 krungthep
 
-![Save Game](images/Asset1.svg)
+![Save Game](images/SaveGame.svg)
 
 ![Main Screen](images/Untitled-1.jpg)
 
