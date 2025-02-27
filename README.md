@@ -19,6 +19,7 @@
 ![Logo](images/Asset1.jpg)
 krungthep
 
+![Main Screen](images/Untitled-1.jpg)
 -Peter Klehr
 
 Trend game
