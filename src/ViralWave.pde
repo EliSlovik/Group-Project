@@ -2,6 +2,7 @@
 boolean play, play2, play3 = false;
 PImage ut, ny;
 int delay = 0;
+int money;
 void setup() {
   size(1920, 1080);
 }
@@ -32,7 +33,7 @@ void draw() {
     println(blue(get(mouseX, mouseY))/10);
   }
   if (play) {
-    delay++;
+    delay += 6;
   }
 }
 //Jialai Ying nopt really needed but okay
