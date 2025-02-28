@@ -62,7 +62,7 @@ void drawBackgroundImage() {
   image(ny, xOffset, yOffset, newWidth, newHeight);
 }
 void startscreen() {
-  Button button1 = new Button(((width -300) /2), (height/2 -30), 300, 50, "Welcome to the ViralWave Game!", 200, 24);
+  Button button1 = new Button(((width -500) /2), (height/2 -30), 500, 50, "Welcome to the ViralWave Game!", 200, 24);
   Button button2 = new Button(((width -300) /2), (height/2+30), 300, 50, "Click to Start!", 200, 24);
   button1.display();
   button2.display();
