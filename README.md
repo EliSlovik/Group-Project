@@ -21,7 +21,7 @@ krungthep
 
 ![Save Game](images/SaveGame.svg)
 
-![Start Screen](images/StartScreen.jpeg)
+![Start Screen](images/StartScreen.jpg)
 
 
 -Peter Klehr
