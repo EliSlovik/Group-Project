@@ -16,12 +16,12 @@
 
 ## Current Projects
 
-![Logo](images/Asset1.jpg)
+![Logo](images/Logo.svg)
 krungthep
 
 ![Save Game](images/SaveGame.svg)
 
-![Main Screen](images/Untitled-1.jpg)
+![Start Screen](images/StartScreen.svg)
 
 
 -Peter Klehr
