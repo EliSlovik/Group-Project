@@ -1,3 +1,4 @@
+//primary: Eli secondary developers: Peter & Jialai
 class Screen {
   // Screen attributes
   int width, height;
@@ -15,7 +16,7 @@ class Screen {
   }
 
   void display() {
-    background(200);
+    //background(200);
     for (Button button : buttons) {
       button.display();
     }
