@@ -2,7 +2,7 @@
 # Members
 ####
 
-* Eli Slovik (Main Programmer): Will mainly work on the Upgrade class and its subclass Enhancers, as well as helping with map logic and demographics
+* Eli Slovik (Main Programmer): Helps with GUI, getting data for demographics, and helps with coding some logic
 
 * Aidan Slovik (Graphics Programmer, and Data Collector): Will design our hard coded maps, and will help Peter with making randomly generated maps
 
