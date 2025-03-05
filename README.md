@@ -43,7 +43,7 @@ Trend game
 ### Class Diagrams, GUI Mockups, Demos, and more
 
 Class Diagram (Work in Progress)
-![ClassDiagram](images/Capture.PNG)
+![ClassDiagram](images/classdiagramscreenshot.PNG)
 Class Diagram File
 ![ClassDiagram](files/Untitleddocument.pdf)
 
