@@ -1,10 +1,10 @@
 //primary: Eli secondary developers: Peter & Jialai
-class Screen {
-  // Screen attributes
+class screen {
+  // screen attributes
   int width, height;
   ArrayList<Button> buttons;
 
-  Screen(int width, int height) {
+  screen(int width, int height) {
     this.width = width;
     this.height = height;
     this.buttons = new ArrayList<Button>();
