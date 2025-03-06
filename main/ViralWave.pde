@@ -82,11 +82,12 @@ void trendscreen() {
 }
 void NYscreen() {
   Screen NYscreen = new Screen(1920, 1080);
-  ny = loadImage("NY Race.png");
+  ny = loadImage("NY.png");
   imageMode(CORNER);
-  //ny.resize(900, 700);
   image(ny, 0, 0);
-  println(getValue(mouseX,mouseY,2.5,'R',"NY Race.png"));
+  text("Percent White: " + getValue(mouseX,mouseY,2.5,'R',"NY Race.png"),1500,150);
+  text("Percent Black: " + getValue(mouseX,mouseY,6,'R',"NY Race.png"),1500,200);
+  text("Percent Hispanic: " + getValue(mouseX,mouseY,4,'R',"NY Race.png"),1500,250);
   NYscreen.addButton((width - 1900), (height - 120), 150, 50, "Back", 200, 24);
   NYscreen.display();
   if (delay >= 100) {

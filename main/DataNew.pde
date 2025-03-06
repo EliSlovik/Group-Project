@@ -6,11 +6,11 @@
     mapImage = loadImage(map);
     
     if (RGB == 'R') {
-      return scale * red(mapImage.get(x, y));
+      return red(mapImage.get(x, y)) / scale;
     } else if (RGB == 'G') {
-      return scale * green(mapImage.get(x, y));
+      return green(mapImage.get(x, y)) / scale;
     } else {
-      return scale * blue(mapImage.get(x, y));
+      return blue(mapImage.get(x, y)) / scale;
     }
     
   }
