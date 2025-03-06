@@ -1,13 +1,14 @@
 //// Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
-enum ScreenState {
+enum screenState {
   START,
     TREND,
     NY,
     UT,
-    INST
+    INST,
+    UPG
 }
 
-ScreenState currentState = ScreenState.START;
+screenState currentState = screenState.START;
 
 PImage ut, ny, bg;
 int delay = 0;
@@ -33,49 +34,54 @@ void draw() {
     NYscreen();
     break;
   case UT:
-    background(135, 173, 194);
+    background(bg);
     UTscreen();
     break;
   case INST:
-  background(bg);
+    background(bg);
     instructionsscreen();
+    break;
+  case UPG:
+    background(bg);
+    upgradesscreen();
+    break;
   }
 
-  if (currentState == ScreenState.TREND) {
+  if (currentState == screenState.TREND) {
     delay += 6;
   }
 }
 
 void startscreen() {
 
-  Screen startscreen = new Screen(1920, 1080);
+  screen startscreen = new screen(1920, 1080);
   startscreen.addButton(((width - 1900) / 2), (height - 800), 500, 50, "Welcome to the ViralWave Game!", 200, 24);
   startscreen.addButton(((width - 1900) / 2), (height - 725), 500, 50, "Click to Start!", 200, 24);
   startscreen.addButton(((width - 1900) / 2), (height - 650), 500, 50, "Instructions", 200, 24);
   startscreen.addButton(((width - 1900) / 2), (height - 575), 500, 50, "Options", 200, 24);
   startscreen.display();
   if (startscreen.buttons.get(1).isPressed()) {
-    currentState = ScreenState.TREND;
+    currentState = screenState.TREND;
   }
   if (startscreen.buttons.get(2).isPressed()) {
-    currentState = ScreenState.INST;
+    currentState = screenState.INST;
   }
 }
 void trendscreen() {
-  Screen trendscreen = new Screen(1920, 1080);
+  screen trendscreen = new screen(1920, 1080);
   trendscreen.addButton(((width - 200) / 2), (height / 2 - 30), 200, 50, "Food Trends", 200, 24);
   trendscreen.addButton(((width - 200) / 2), (height / 2 + 30), 200, 50, "Music Trends", 200, 24);
   trendscreen.addButton((width - 1900), (height - 120), 300, 50, "Back to Main Menu", 200, 24);
   trendscreen.display();
   if (trendscreen.buttons.get(2).isPressed()) {
-    currentState = ScreenState.START;
+    currentState = screenState.START;
   }
   if (delay >= 100) {
     if (trendscreen.buttons.get(1).isPressed()) {
-      currentState = ScreenState.UT;
+      currentState = screenState.UT;
     }
     if (trendscreen.buttons.get(0).isPressed()) {
-      currentState = ScreenState.NY;
+      currentState = screenState.NY;
     }
   }
 }
@@ -88,6 +94,16 @@ void NYscreen() {
   println(blue(get(mouseX, mouseY)) / 10);
 }
 void UTscreen() {
+  screen UTscreen = new screen(1920, 1080);
+  UTscreen.addButton(((width - 900) / 2), (height / 2 - 30), 900, 50, "Upgrades", 200, 24);
+  UTscreen.addButton((width - 1900), (height - 120), 300, 50, "Back to Main Menu", 200, 24);
+  UTscreen.display();
+  if (UTscreen.buttons.get(1).isPressed()) {
+    currentState = screenState.START;
+  }
+  if (UTscreen.buttons.get(0).isPressed()) {
+    currentState = screenState.UPG;
+  }
   ut = loadImage("UP.png");
   imageMode(CENTER);
   ut.resize(900, 900);
@@ -96,8 +112,15 @@ void UTscreen() {
   println(green(get(mouseX, mouseY)) / 10);
 }
 void instructionsscreen() {
-  Screen instructionsscreen = new Screen(1920,1080);
+  screen instructionsscreen = new screen(1920, 1080);
   instructionsscreen.addButton(((width - 900) / 2), (height / 2 - 30), 900, 50, "This is the instructions screen", 200, 24);
   instructionsscreen.addButton(((width - 900) / 2), (height / 2 + 30), 900, 50, "We will have screenshots of gameplay when it becomes functional", 200, 24);
+  instructionsscreen.addButton((width - 1900), (height - 120), 300, 50, "Back to Main Menu", 200, 24);
   instructionsscreen.display();
+  if (instructionsscreen.buttons.get(2).isPressed()) {
+    currentState = screenState.START;
+  }
+}
+void upgradesscreen() {
+  text("this is the upgrades screen", 50, 50);
 }
