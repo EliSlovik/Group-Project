@@ -1,5 +1,5 @@
-//// Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
-//// UI fixing and class updating Peter Klehr
+// Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
+// UI fixing and class updating Peter Klehr
 enum ScreenState {
   START,
     TREND,
@@ -10,23 +10,32 @@ enum ScreenState {
 
 ScreenState currentState = ScreenState.START;
 
-PImage ut, ny, bg;
+PImage ut, ny, bg, bg2, logo;
 int delay = 0;
 int money;
+int x, x2;
 
 void setup() {
   size(1920, 1080);
-  bg = loadImage("StartScreen.jpg");
+  bg = loadImage("bg.jpg");
+  bg2 = loadImage("bg.jpg");
+  logo = loadImage("Logo.jpg");
+  x = 1920;
+  x2 = 0;
 }
 
 void draw() {
   switch (currentState) {
   case START:
-    background(bg);
+    back();
+    x--;
+    x2--;
     startscreen();
     break;
   case TREND:
-    background(bg);
+    back();
+    x--;
+    x2--;
     trendscreen();
     break;
   case NY:
@@ -38,7 +47,9 @@ void draw() {
     UTscreen();
     break;
   case INST:
-    background(bg);
+    back();
+    x--;
+    x2--;
     instructionsscreen();
   }
 
@@ -46,14 +57,24 @@ void draw() {
     delay += 6;
   }
 }
-
+void back() {
+  imageMode(CORNER);
+  image(bg, x, 0);
+  image(bg2, x2, 0);
+  image(logo, 50, 50);
+  if (x2 == -1920) {
+    x2 = 1920;
+  } else if (x == -1920) {
+    x = 1920;
+  }
+}
 void startscreen() {
 
   Screen startscreen = new Screen(1920, 1080);
-  startscreen.addButton(((width - 1900) / 2), (height - 800), 500, 50, "Welcome to the ViralWave!", 200, 34);
-  startscreen.addButton(((width - 1900) / 2), (height - 725), 500, 50, "Start", 200, 24);
-  startscreen.addButton(((width - 1900) / 2), (height - 650), 500, 50, "Instructions", 200, 24);
-  startscreen.addButton(((width - 1900) / 2), (height - 575), 500, 50, "Options", 200, 24);
+  startscreen.addButton(((width - 1900) / 2), (height - 700), 500, 50, "Welcome to the ViralWave!", 200, 34);
+  startscreen.addButton(((width - 1900) / 2), (height - 625), 500, 50, "Start", 200, 24);
+  startscreen.addButton(((width - 1900) / 2), (height - 550), 500, 50, "Instructions", 200, 24);
+  startscreen.addButton(((width - 1900) / 2), (height - 475), 500, 50, "Options", 200, 24);
   startscreen.display();
   if (startscreen.buttons.get(1).isPressed()) {
     currentState = ScreenState.TREND;
@@ -70,8 +91,8 @@ void trendscreen() {
   trendscreen.display();
   if (delay >= 100) {
     if (trendscreen.buttons.get(2).isPressed()) {
-    currentState = ScreenState.START;
-  }
+      currentState = ScreenState.START;
+    }
     if (trendscreen.buttons.get(1).isPressed()) {
       currentState = ScreenState.UT;
     }
@@ -85,9 +106,11 @@ void NYscreen() {
   ny = loadImage("NY.png");
   imageMode(CORNER);
   image(ny, 0, 0);
-  text("Percent White: " + getValue(mouseX,mouseY,2.5,'R',"NY Race.png"),1500,150);
-  text("Percent Black: " + getValue(mouseX,mouseY,6,'R',"NY Race.png"),1500,200);
-  text("Percent Hispanic: " + getValue(mouseX,mouseY,4,'R',"NY Race.png"),1500,250);
+  if (getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png")!= 102.0) {
+    text("Percent White: " + getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png"), 1500, 150);
+    text("Percent Black: " + getValue(mouseX, mouseY, 6, 'G', "NY Race.png"), 1500, 200);
+    text("Percent Hispanic: " + getValue(mouseX, mouseY, 4, 'B', "NY Race.png"), 1500, 250);
+  }
   NYscreen.addButton((width - 1900), (height - 120), 150, 50, "Back", 200, 24);
   NYscreen.display();
   if (delay >= 100) {
@@ -98,7 +121,7 @@ void NYscreen() {
 }
 void UTscreen() {
   Screen UTscreen = new Screen(1920, 1080);
-  ut = loadImage("UP.png");
+  ut = loadImage("NY.png");
   imageMode(CENTER);
   ut.resize(900, 900);
   image(ut, 700, 650);
