@@ -1,5 +1,5 @@
 // Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
-// UI fixing and class updating Peter Klehr
+// UI fixing and class updating Peter Klehr, Spreading functionality: Peter & Eli
 enum ScreenState {
   START,
     TREND,
@@ -7,16 +7,13 @@ enum ScreenState {
     UT,
     INST
 }
-
 ScreenState currentState = ScreenState.START;
-
 PImage ut, ny, bg, bg2, logo;
 int delay = 0;
-int money;
 int x, x2;
-//boolean[][] points = new boolean[1920][1080];
+int money;
 ArrayList<PVector> points = new ArrayList<PVector>();
-
+ArrayList<PVector> pointsToAdd = new ArrayList<PVector>();
 void setup() {
   size(1920, 1080);
   bg = loadImage("bg.jpg");
@@ -24,22 +21,14 @@ void setup() {
   logo = loadImage("Logo.jpg");
   x = 1920;
   x2 = 0;
-  //for (int i = 0; i<width-1; i++) {
-  //  for (int j = 0; j<height-1; j++) {
-  //    points[i][j]=false;
-  //  }
-  //}
 }
-
 boolean mouseDown = false;
-
 void draw() {
   if (mousePressed && !mouseDown) {
     mouseDown = true;
   } else if (!mousePressed) {
     mouseDown = false;
   }
-  
   switch (currentState) {
   case START:
     back();
@@ -53,53 +42,38 @@ void draw() {
     x2--;
     trendscreen();
     break;
+    
+    
   case NY:
     background(135, 173, 194);
     NYscreen();
- 
-    //if (points[i][j]) {
-    //  points[i+1][j] = true;
-    //  points[i-1][j] = true;
-    //  points[i][j+1] = true;
-    //  points[i][j-1] =true;
-    //}
-
-    //if (getValue(i, j, 2.5, 'R', "NY Race.png")!= 102.0 && points[i][j]) {
-    //  fill(100);
-    //  point(i, j);
-    //}
     if (delay >= 100) {
-   if (mouseDown && getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png") != 102.0) {
-      points.add(new PVector(mouseX, mouseY));
-    }
+      if (mouseDown && getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png") != 102.0) {
+        points.add(new PVector(mouseX, mouseY));
+      }
     }
     for (int i = 0; i < points.size(); i ++) {
-      //System.out.print("test");
-      if (!points.contains(new PVector(points.get(i).x+1, points.get(i).y))) {
-        points.add(new PVector(points.get(i).x+1, points.get(i).y));
+      PVector p = points.get(i);
+      if (!containsPoint(points, p.x+1, p.y)) {
+        pointsToAdd.add(new PVector(p.x+1, p.y));
       }
-      if (!points.contains(new PVector(points.get(i).x, points.get(i).y-1))) {
-        points.add(new PVector(points.get(i).x, points.get(i).y-1));
+      if (!containsPoint(points, p.x, p.y-1)) {
+        pointsToAdd.add(new PVector(p.x, p.y-1));
       }
-      if (!points.contains(new PVector(points.get(i).x-1, points.get(i).y))) {
-        points.add(new PVector(points.get(i).x-1, points.get(i).y));
+      if (!containsPoint(points, p.x-1, p.y)) {
+        pointsToAdd.add(new PVector(p.x-1, p.y));
       }
-      if (!points.contains(new PVector(points.get(i).x, points.get(i).y+1))) {
-        points.add(new PVector(points.get(i).x, points.get(i).y+1));
+      if (!containsPoint(points, p.x, p.y+1)) {
+        pointsToAdd.add(new PVector(p.x, p.y+1));
       }
     }
-    
-
-    for (int i = 0; i < points.size(); i ++) {
+    points.addAll(pointsToAdd);
+    for (int i = 0; i < points.size(); i++) {
       fill(100);
-      point(points.get(i).x,points.get(i).y);
+      point(points.get(i).x, points.get(i).y);
     }
     System.out.println(points.size());
-    //i++;
-    //j++;
-
     break;
-
   case UT:
     background(135, 173, 194);
     UTscreen();
@@ -110,11 +84,19 @@ void draw() {
     x2--;
     instructionsscreen();
   }
-
   if (currentState == ScreenState.TREND) {
     delay += 6;
   }
 }
+boolean containsPoint(ArrayList<PVector> list, float x, float y) {
+  for (PVector p : list) {
+      if (p.x == x && p.y == y) {
+      return true;
+    }
+  }
+  return false;
+}
+
 void back() {
   imageMode(CORNER);
   image(bg, x, 0);
