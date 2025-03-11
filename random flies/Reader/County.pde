@@ -11,8 +11,12 @@ public class County {
      this.population = p;
      this.popDensity = d;
   }
+  public int getPop() {
+     return population; 
+  }
   
   public String toString() {
-    return name + " is county number " + id + " and has " + population + " people and a density of " + popDensity + " people per square mile."; 
+    return name + " is county number " + id + " and has " + population + 
+    " people and a density of " + popDensity + " people per square mile."; 
   }
 }
