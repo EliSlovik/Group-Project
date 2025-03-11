@@ -3,23 +3,38 @@ private enum Platform {
     TikTok,
     Instagram
 }
-abstract class socialMedia extends Upgrade {
+abstract class SocialMedia extends Upgrade {
   private int likeToDislikeRatio;
   private int shareRatio;
-  TargetAge targetAge = TargetAge.children;
-  Platform platform = Platform.Facebook;
+  TargetAge targetAge;
+  TargetAge secondTargetAge;
+  Platform platform;
 
-  switch (platform) {
-  case Facebook:
-    Facebook = 3;
-    break;
+  public SocialMedia(Platform platform, TargetAge age, int price) {
+    super(age, price);
+    this.platform = platform;
+    setPlatformActions();
   }
-  public void makePost() {
+  public void setPlatformActions() {
+    switch(platform) {
+    case Facebook:
+      targetAge = TargetAge.married;
+      targetAge = TargetAge.youngAdults;
+      break;
+    case TikTok:
+      targetAge = TargetAge.children;
+      secondTargetAge = TargetAge.children;
+      break;
+    case Instagram:
+      targetAge = TargetAge.youngAdults;
+      secondTargetAge = TargetAge.youngAdults;
+      break;
+    }
   }
-
-  public void makeAd() {
+  public  void makePost() {
   }
-
-  public void collab() {
+  public  void makeAd() {
+  }
+  public  void collab() {
   }
 }
