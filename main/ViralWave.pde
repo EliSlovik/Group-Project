@@ -13,6 +13,7 @@ PImage ut, ny, bg, bg2, logo;
 int delay = 0;
 int x, x2;
 int money;
+int spreadRate;
 HashSet<PVector> points = new HashSet<PVector>();
 ArrayList<PVector> pointsToAdd = new ArrayList<PVector>();
 void setup() {
@@ -22,6 +23,7 @@ void setup() {
   logo = loadImage("Logo.jpg");
   x = 1920;
   x2 = 0;
+  spreadRate = 200;
 }
 boolean mouseDown = false;
 void draw() {
@@ -42,6 +44,7 @@ void draw() {
     x--;
     x2--;
     trendscreen();
+    points.clear();
     break;
 
 
@@ -66,6 +69,7 @@ void draw() {
         if (!containsPoint(points, p.x, p.y+10)) {
           pointsToAdd.add(new PVector(p.x, p.y+10));
         }
+        delay(spreadRate);
       }
     points.addAll(pointsToAdd);
     pointsToAdd.clear();
@@ -74,10 +78,11 @@ void draw() {
       rect(p.x, p.y, 10, 10);
     }
     System.out.println(points.size());
+    
     break;
   case UT:
     background(135, 173, 194);
-    UTscreen();
+    NYscreen();
     break;
   case INST:
     back();
@@ -160,22 +165,7 @@ void NYscreen() {
     }
   }
 }
-void UTscreen() {
-  Screen UTscreen = new Screen(1920, 1080);
-  ut = loadImage("NY.png");
-  imageMode(CENTER);
-  ut.resize(900, 900);
-  image(ut, 700, 650);
-  fill(green(get(mouseX, mouseY)));
-  println(green(get(mouseX, mouseY)) / 10);
-  UTscreen.addButton((width - 1900), (height - 120), 150, 50, "Back", 200, 24);
-  UTscreen.display();
-  if (delay >= 100) {
-    if (UTscreen.buttons.get(0).isPressed()) {
-      currentState = ScreenState.TREND;
-    }
-  }
-}
+
 void instructionsscreen() {
   Screen instructionsscreen = new Screen(1920, 1080);
   instructionsscreen.addButton(((width - 900) / 2), (height / 2 - 30), 900, 50, "This is the instructions screen", 200, 24);

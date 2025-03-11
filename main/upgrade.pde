@@ -9,11 +9,15 @@
     latino,
     asian
   }
-  
+  enum TargetAge {
+    children,
+    youngAdults,
+    married,
+    seniors   
+  }
 public abstract class Upgrade {
   int targetAge;
   int cost;
-
 
   int targetSalaryRange;
   int spreadRate;
