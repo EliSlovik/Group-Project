@@ -1,5 +1,6 @@
 // Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
 // UI fixing and class updating Peter Klehr, Spreading functionality: Peter & Eli
+import java.util.*;
 enum ScreenState {
   START,
     TREND,
@@ -12,7 +13,7 @@ PImage ut, ny, bg, bg2, logo;
 int delay = 0;
 int x, x2;
 int money;
-ArrayList<PVector> points = new ArrayList<PVector>();
+HashSet<PVector> points = new HashSet<PVector>();
 ArrayList<PVector> pointsToAdd = new ArrayList<PVector>();
 void setup() {
   size(1920, 1080);
@@ -42,35 +43,35 @@ void draw() {
     x2--;
     trendscreen();
     break;
-    
-    
+
+
   case NY:
     background(135, 173, 194);
     NYscreen();
     if (delay >= 100) {
       if (mouseDown && getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png") != 102.0) {
-        points.add(new PVector(mouseX, mouseY));
+        points.add(new PVector(floor(mouseX/10)*10, floor(mouseY/10)*10));
       }
     }
-    for (int i = 0; i < points.size(); i ++) {
-      PVector p = points.get(i);
-      if (!containsPoint(points, p.x+1, p.y)) {
-        pointsToAdd.add(new PVector(p.x+1, p.y));
+    for (PVector p : points) {
+        if (!containsPoint(points, p.x+10, p.y)) {
+          pointsToAdd.add(new PVector(p.x+10, p.y));
+        }
+        if (!containsPoint(points, p.x, p.y-10)) {
+          pointsToAdd.add(new PVector(p.x, p.y-10));
+        }
+        if (!containsPoint(points, p.x-10, p.y)) {
+          pointsToAdd.add(new PVector(p.x-10, p.y));
+        }
+        if (!containsPoint(points, p.x, p.y+10)) {
+          pointsToAdd.add(new PVector(p.x, p.y+10));
+        }
       }
-      if (!containsPoint(points, p.x, p.y-1)) {
-        pointsToAdd.add(new PVector(p.x, p.y-1));
-      }
-      if (!containsPoint(points, p.x-1, p.y)) {
-        pointsToAdd.add(new PVector(p.x-1, p.y));
-      }
-      if (!containsPoint(points, p.x, p.y+1)) {
-        pointsToAdd.add(new PVector(p.x, p.y+1));
-      }
-    }
     points.addAll(pointsToAdd);
-    for (int i = 0; i < points.size(); i++) {
+    pointsToAdd.clear();
+    for (PVector p : points) {
       fill(100);
-      point(points.get(i).x, points.get(i).y);
+      rect(p.x, p.y, 10, 10);
     }
     System.out.println(points.size());
     break;
@@ -88,9 +89,9 @@ void draw() {
     delay += 6;
   }
 }
-boolean containsPoint(ArrayList<PVector> list, float x, float y) {
+boolean containsPoint(HashSet<PVector> list, float x, float y) {
   for (PVector p : list) {
-      if (p.x == x && p.y == y) {
+    if (p.x == x && p.y == y) {
       return true;
     }
   }
