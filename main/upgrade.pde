@@ -1,36 +1,44 @@
-  enum TargetGender {
-    man,
+enum TargetGender {
+  man,
     woman
-  }
+}
 
-  enum TargetEthnicity {
-    caucasian,
+enum TargetEthnicity {
+  caucasian,
     black,
     latino,
     asian
-  }
-  enum TargetAge {
-    children,
+}
+enum TargetAge {
+  children,
     youngAdults,
     married,
-    seniors   
-  }
+    seniors
+}
+enum TargetSalaryRange {
+   lowerclass,
+   middleclass,
+   upperclass
+}
 public abstract class Upgrade {
-  int targetAge;
   int cost;
-
-  int targetSalaryRange;
+  TargetAge targetAge;
+  TargetSalaryRange targetSalaryRange;
+  public Upgrade(TargetAge age, int price) {
+    targetAge = age;
+    cost = price;
+  }
   int spreadRate;
 
   public int getCost() {
     return cost;
   }
 
-  public int getTargetAge() {
+  public TargetAge getTargetAge() {
     return targetAge;
   }
 
-  public int getTargetSalaryRange() {
+  public TargetSalaryRange getTargetSalaryRange() {
     return targetSalaryRange;
   }
 }
