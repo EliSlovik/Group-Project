@@ -1,40 +1,44 @@
-private enum Platform {
-  Facebook,
-    TikTok,
-    Instagram
-}
-abstract class SocialMedia extends Upgrade {
+//Eli Slovik
+class SocialMedia extends Upgrade {
   private int likeToDislikeRatio;
   private int shareRatio;
   TargetAge targetAge;
   TargetAge secondTargetAge;
   Platform platform;
 
-  public SocialMedia(Platform platform, TargetAge age, int price) {
-    super(age, price);
+  public SocialMedia(Platform platform, int price) {
+    super(price, null, null, null, null);
     this.platform = platform;
-    setPlatformActions();
+    setTargetAge(getTargetAgeForPlatform(platform));
   }
-  public void setPlatformActions() {
-    switch(platform) {
-    case Facebook:
-      targetAge = TargetAge.married;
-      targetAge = TargetAge.youngAdults;
-      break;
-    case TikTok:
-      targetAge = TargetAge.children;
-      secondTargetAge = TargetAge.children;
-      break;
-    case Instagram:
-      targetAge = TargetAge.youngAdults;
-      secondTargetAge = TargetAge.youngAdults;
-      break;
+
+  private  TargetAge getTargetAgeForPlatform(Platform platform) {//i might also add a secondTargetAge variable for like facebook that targets young adults and married, and i would add it to upgrade constructor
+    switch (platform) {
+      case Facebook:
+        return TargetAge.married;
+      case TikTok:
+        return TargetAge.children;
+      case Instagram:
+        return TargetAge.youngAdults;
+      default:
+        return null;
     }
   }
-  public  void makePost() {
+
+  public void makePost() {
   }
-  public  void makeAd() {
+
+  public void makeAd() {
   }
-  public  void collab() {
+
+  public void collab() {
+  }
+
+  public TargetAge getTargetAge() {
+    return targetAge;
+  }
+
+  public TargetAge getSecondTargetAge() {
+    return secondTargetAge;
   }
 }
