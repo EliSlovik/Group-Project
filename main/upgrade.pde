@@ -1,4 +1,4 @@
-//Eli Slovik
+//Eli Slovik & and some Owen
 enum TargetGender {
   man,
     woman
