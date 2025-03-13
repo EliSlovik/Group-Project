@@ -10,9 +10,9 @@
 
 * Cormac Stone (Inheritance Programmer): Will be the main programmer for setting up Inheritance and will focuse on the Trends Class
 
-* Owen Madsen (Project Manager, Programmer, and Team Support): Will work on the Upgrades (Bill Boards, Magazines, Social Media) , while also helping with GUI when needed
+* Owen Madsen (Programmer, and Team Support): Will work on the Upgrades (Bill Boards, Magazines, Social Media) , while also helping with GUI when needed
 
-* Peter Klehr (Data, Graphic Designer, and Map Programmer): Will research data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
+* Peter Klehr (Project Manager, Data, Graphic Designer, and Map Programmer): Will research data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
 
 ## Current Projects
 
