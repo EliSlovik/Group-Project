@@ -1,4 +1,4 @@
-// Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
+// Primary: ELi Slovik, Jialai Ying, Cormac Stone, Peter Klehr
 // UI fixing and class updating Peter Klehr, Spreading functionality: Peter & Eli
 // county map reading added: Aidan Slovik
 import java.util.*;
