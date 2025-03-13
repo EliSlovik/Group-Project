@@ -1,5 +1,6 @@
 // Primary: ELi Slovik Big helper: Jialai Ying His little Helpers: Cormac Stone, Peter Klehr
 // UI fixing and class updating Peter Klehr, Spreading functionality: Peter & Eli
+// county map reading added: Aidan Slovik
 import java.util.*;
 enum ScreenState {
   START,
@@ -14,6 +15,8 @@ int delay = 0;
 int x, x2;
 int money;
 int spreadRate;
+PImage nynew, blankTemp;
+County[] counties = new County[62];
 HashSet<PVector> points = new HashSet<PVector>();
 ArrayList<PVector> pointsToAdd = new ArrayList<PVector>();
 void setup() {
@@ -24,6 +27,31 @@ void setup() {
   x = 1920;
   x2 = 0;
   spreadRate = 200;
+  Table table;
+  table = loadTable("file.csv", "header");
+  int i = 0;
+  //imageMode(CORNER);
+  textSize(20);
+
+  for (TableRow row : table.rows()) {
+    int id = row.getInt("id");
+    String county = row.getString("county");
+    int pop = row.getInt("population");
+    float popDensity = row.getFloat("population density");
+    int child = row.getInt("0-19");
+    int youngAdult = row.getInt("20-34");
+    int adult = row.getInt("35-64");
+    int retired = row.getInt("over 65");
+    int white = row.getInt("white");
+    int black = row.getInt("black");
+    int asian = row.getInt("asian");
+    int hispanic = row.getInt("hispanic");
+    
+    County temp = new County(id, county, pop, popDensity, child, youngAdult, adult, retired, white, black, asian, hispanic);
+    counties[i] = temp;
+    i++;
+  }
+  
 }
 boolean mouseDown = false;
 void draw() {
@@ -149,14 +177,16 @@ void trendscreen() {
 }
 void NYscreen() {
   Screen NYscreen = new Screen(1920, 1080);
-  ny = loadImage("NY.png");
-  imageMode(CORNER);
-  image(ny, 0, 0);
-  if (getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png")!= 102.0) {
-    text("Percent White: " + getValue(mouseX, mouseY, 2.5, 'R', "NY Race.png"), 1500, 150);
-    text("Percent Black: " + getValue(mouseX, mouseY, 6, 'G', "NY Race.png"), 1500, 200);
-    text("Percent Hispanic: " + getValue(mouseX, mouseY, 4, 'B', "NY Race.png"), 1500, 250);
-  }
+  nynew = loadImage("NY Temp.png"); 
+ blankTemp = loadImage("Blank.png"); 
+ image(blankTemp, 0, 0);
+ //image(nynew, 0, 0);
+ int rv = int(red(nynew.get(mouseX,mouseY)));
+ if(rv<63) {
+   text(counties[rv-1].toString(),1600,500);
+ } else {
+   text(-1,0,0);
+ }
   NYscreen.addButton((width - 1900), (height - 120), 150, 50, "Back", 200, 24);
   NYscreen.display();
   if (delay >= 100) {
