@@ -26,7 +26,7 @@ void setup() {
   logo = loadImage("Logo.jpg");
   x = 1920;
   x2 = 0;
-  spreadRate = 200;
+  spreadRate = 20;
   Table table;
   table = loadTable("file.csv", "header");
   int i = 0;
