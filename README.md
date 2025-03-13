@@ -4,15 +4,15 @@
 
 * Eli Slovik (Main Programmer): Helps with GUI, getting data for demographics, and helps with coding some logic
 
-* Aidan Slovik (Graphics Programmer, and Data Collector): Will design our hard coded maps, and will help Peter with making randomly generated maps
+* Aidan Slovik (Graphics Programmer, and Data Collector): Will research data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
 
 * Jialai Ying (GUI/Flexible Programmer): Will be the main programmer of our GUI  
 
-* Cormac Stone (Inheritance Programmer): Will be the main programmer for setting up Inheritance and will focuse on the Trends Class
+* Cormac Stone (Flex Programmer): Helped everyone on their code, mainly with aidan
 
-* Owen Madsen (Programmer, and Team Support): Will work on the Upgrades (Bill Boards, Magazines, Social Media) , while also helping with GUI when needed
+* Owen Madsen (Programmer, and Support with code and concepts): Will work on the Upgrades (Bill Boards, Magazines, Social Media) , while also helping with GUI when needed
 
-* Peter Klehr (Project Manager, Data, Graphic Designer, and Map Programmer): Will research data on demographics for the hard coded map of SLC, will also intergrate the data onto the map
+* Peter Klehr (Project Manager, Graphic Designer, and Map Programmer): Helped with making graphics, and worked on some data
 
 ## Current Projects
 
